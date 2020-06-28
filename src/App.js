@@ -13,6 +13,7 @@ function App() {
           <Navbar />
           <Switch>
             <Route path='/' exact component={Home} />
+            <Route path='/:postId' exact component={Post} />
           </Switch>
         </Router>  
       </div>
