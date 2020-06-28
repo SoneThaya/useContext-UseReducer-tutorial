@@ -3,7 +3,8 @@ import Navbar from './components/Navbar'
 import BlogProvider from './context/BlogProvider';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home'
+import Home from './pages/Home';
+import Post from './pages/Post'
 
 function App() {
   return (

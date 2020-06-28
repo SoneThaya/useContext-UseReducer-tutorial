@@ -62,3 +62,21 @@ a {
   font-weight: 700;
   margin-bottom: 10px;
 }
+
+@media(max-width: 768px) {
+  .posts-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    height: 300px;
+    font-size: 44px;
+  }
+}
+
+@media(max-width: 600px) {
+  .posts-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
