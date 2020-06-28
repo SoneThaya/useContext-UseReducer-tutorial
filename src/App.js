@@ -1,15 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
+import Hero from './components/Hero';
+import BlogProvider from './context/BlogProvider';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-    </div>
+    <BlogProvider>
+      <div className="App">
+        <Navbar />
+        <Hero />
+      </div>
+    </BlogProvider>
+    
   );
 }
 
